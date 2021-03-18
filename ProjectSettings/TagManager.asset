@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NPC
+  - Waypoint
+  - FxTemporaire
+  - PlayerVR
   layers:
   - Default
   - TransparentFX

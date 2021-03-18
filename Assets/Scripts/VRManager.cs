@@ -6,10 +6,16 @@ using UnityEngine.XR;
 public class VRManager : MonoBehaviour
 {
     public bool showVR = false;
+    public float playerScale = 5f;
+    public Transform player;
 
     private void Update()
     {
-        UnityEngine.XR.XRSettings.showDeviceView = true;
-    }
+        // TODO: Move somewhere else
 
+        UnityEngine.XR.XRSettings.showDeviceView = true;
+        player.localScale = new Vector3(playerScale, playerScale, playerScale);
+
+    }
 }
+
